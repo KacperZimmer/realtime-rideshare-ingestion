@@ -4,7 +4,7 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "terraform_state_bucket" {
-  bucket = var.bucket_name
+  bucket = "terraform-state-poc-de-project-02-kz"
 }
 resource "aws_s3_bucket_versioning" "terraform_state_versioning" {
   bucket = aws_s3_bucket.terraform_state_bucket.id
