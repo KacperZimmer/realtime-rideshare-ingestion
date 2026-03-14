@@ -2,6 +2,10 @@
 
 This project simulates a real-time data ingestion platform for ride-sharing applications (e.g., Bolt, Uber). The entire infrastructure is hosted on AWS and managed as Infrastructure as Code (IaC) using Terraform.
 
+## Architecture Diagram
+![Architektura Projektu AWS](images/architecture_diagram_aws.drawio.png
+)
+
 ## 🏗️ Infrastructure Architecture (Layers)
 
 To ensure security, modularity, and to limit the blast radius in case of errors, the Terraform infrastructure is divided into independent layers. Each layer stores its state (`.tfstate`) remotely in a secure Amazon S3 bucket.
